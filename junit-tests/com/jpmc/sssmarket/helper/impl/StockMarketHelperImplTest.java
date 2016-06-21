@@ -30,11 +30,11 @@ public class StockMarketHelperImplTest {
 
 	/**
 	 * Test method for @see
-	 * StockCalculatorHelperImpl.calculateDividendYieldPreferred(double, double,
+	 * StockCalculatorHelperImpl.calculatePreferredDividendYield(double, double,
 	 * double)
 	 */
 	@Test
-	public void testCalculateDividendYieldPreferred() {
+	public void testCalculatePreferredDividendYield() {
 		Assert.assertEquals(0.4d, stockMarketHelper
 				.calculatePreferredDividendYield(0.5d, 20d, 25d), 0d);
 
@@ -58,7 +58,7 @@ public class StockMarketHelperImplTest {
 	 * double)
 	 */
 	@Test
-	public void testCalculatePeRatio() {
+	public void testCalculatePERatio() {
 		Assert.assertEquals(22.05128205128205d,
 				stockMarketHelper.calculatePERatio(43d, 1.95d), 0d);
 

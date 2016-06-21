@@ -2,14 +2,27 @@ package com.jpmc.sssmarket.bo;
 
 import com.jpmc.sssmarket.enums.StockType;
 
+/**
+ * Class representing the stock
+ */
 public class Stock {
+	/* The symbol of the stock */
 	private String stockSymbol;
-	private StockType stockType;
-	private Double lastDividend;
-	private Double fixedDividend;
-	private Double parValue;
-	private Double price;
 
+	/* represents the stock type whether it is common or preferred */
+	private StockType stockType;
+
+	/* The last dividend for the stock */
+	private Double lastDividend;
+
+	/* The fixed dividend for the stock */
+	private Double fixedDividend;
+
+	/* The last par value for the stock */
+	private Double parValue;
+
+	/* The price of the stock */
+	private Double price;
 
 	public Stock(String stockSymbol, StockType stockType, Double lastDividend,
 			Double fixedDividend, Double parValue, Double price) {
@@ -61,7 +74,6 @@ public class Stock {
 	public void setParValue(Double parValue) {
 		this.parValue = parValue;
 	}
-	
 
 	public Double getPrice() {
 		return price;
